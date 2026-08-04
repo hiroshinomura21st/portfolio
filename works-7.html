@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Java Servlet・JSP・JDBCを用いて再設計・再実装した在庫管理Webアプリケーションの紹介ページです。CRUD、検索、並べ替え、検索状態保持を実装し、Herokuで公開しています。">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <title>在庫管理アプリ Servlet・JSP版 | NOMURA HIROSHI</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="index.html">NOMURA HIROSHI</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+  <div class="article-container">
+    <h2 class="article-title">在庫管理アプリ （Servlet & JSP版）</h2>
+
+    <div class="article-body">
+      <p>
+        <img src="img/works-detail/lss7.png"
+             alt="在庫管理アプリ Servlet・JSP版のトップ画面">
+      </p>
+
+      <p>
+        PHPで開発した在庫管理アプリをもとに、
+        Java Servlet・JSP・JDBCを使用して一から再設計・再実装したWebアプリケーションです。
+      </p>
+
+      <h3>公開URL</h3>
+      <p>
+        <a href="https://inventory-management-servlet-ea88bf3b64ea.herokuapp.com/"
+           target="_blank"
+           rel="noopener">
+          https://inventory-management-servlet-ea88bf3b64ea.herokuapp.com/
+        </a>
+      </p>
+
+      <h3>ソースコード</h3>
+      <p>
+        <a href="https://github.com/hiroshinomura21st/inventory-management-servlet"
+           target="_blank"
+           rel="noopener">
+          https://github.com/hiroshinomura21st/inventory-management-servlet
+        </a>
+      </p>
+
+      <h3>主な機能</h3>
+      <p>
+        商品一覧表示、商品登録、商品編集、商品削除、商品名検索、
+        商品名の昇順・降順ソート、処理結果メッセージの表示を実装しています。
+      </p>
+
+      <h3>使用技術</h3>
+      <p>
+        Java 17 / Servlet / JSP / JSTL / JDBC / Maven /
+        H2 Database / Apache Tomcat 10 / HTML / CSS / Git / GitHub / Heroku
+      </p>
+
+      <h3>設計・実装について</h3>
+      <p>
+        PHP版のコードをそのままJavaへ置き換えるのではなく、
+        実際のアプリの動作を確認し、画面遷移やデータの流れを考えながら、
+        Javaらしいクラス構成で再設計しました。
+      </p>
+
+      <p>
+        Servlet、ビジネスロジック、DAO、モデルに役割を分け、
+        データベースへの接続処理も共通クラスへ集約しています。
+      </p>
+
+      <h3>工夫した点</h3>
+      <p>
+        検索条件と並び順をセッションに保存し、
+        商品の登録・編集・削除後も元の検索結果へ戻れるようにしました。
+      </p>
+
+      <p>
+        また、Heroku上でH2を動作させるため、
+        実行環境に応じて接続先を切り替え、
+        アプリ起動時にテーブルと仕入先マスタを初期化する処理を実装しました。
+      </p>
+
+      <h3>今後の改善予定</h3>
+      <p>
+        PostgreSQLへの移行、データの永続化、削除処理の改善、
+        バッチ処理の追加を予定しています。
+      </p>
+    </div>
+
+    <div class="home-link">
+      <a href="index.html#works">Works一覧へ</a>
+    </div>
+  </div>
+</article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;NOMURA HIROSHI</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
