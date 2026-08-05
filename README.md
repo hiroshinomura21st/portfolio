@@ -45,11 +45,14 @@ portfolio/
 
 ## Version History
 
-### v2.1.0 (2026-08-05)
+### v2.1.0 (2026-08-04)
 
 - Java中心のデザインへ刷新
-- WHAT'S NEWを追加
 - Java Servlet版作品を追加
+
+### v2.1.1(2026-08-05)
+
+- WHAT'S NEWを追加
 - READMEを追加
 
 ## 関連リポジトリ
