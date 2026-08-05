@@ -397,6 +397,16 @@ img {
   margin-bottom: 30px;
 }
 
+.article-version {
+  margin-top: -12px;
+  margin-bottom: 24px;
+  color: #315d91;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
 .home-link {
   text-align: center;
 }
@@ -586,5 +596,11 @@ img {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
+  }
+
+  .article-version {
+    margin: 6px 0 20px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
   }
 }
