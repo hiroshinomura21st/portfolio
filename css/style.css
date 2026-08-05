@@ -158,6 +158,39 @@ img {
 }
 
 /*--------------------------------
+ News
+---------------------------------*/
+.news {
+  background-color: #f7f8fa;
+}
+
+.news-list {
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid #d9dce1;
+}
+
+.news-item {
+  display: flex;
+  gap: 32px;
+  padding: 20px 8px;
+  border-bottom: 1px solid #d9dce1;
+}
+
+.news-date {
+  flex-shrink: 0;
+  width: 110px;
+  color: #315d91;
+  font-weight: 700;
+}
+
+.news-text {
+  margin: 0;
+  line-height: 1.8;
+}
+
+
+/*--------------------------------
  Works
 ---------------------------------*/
 .works-list {
@@ -450,6 +483,21 @@ img {
   .mv-text {
     top: 75%;
     font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* News */
+    .news-item {
+    display: block;
+    padding: 16px 4px;
+  }
+
+  .news-date {
+    width: auto;
+    margin-bottom: 6px;
+  }
+
+  .news-text {
     line-height: 1.7;
   }
 
