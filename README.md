@@ -42,6 +42,7 @@ portfolio/
 ├── works-6.html
 ├── works-7.html
 └── README.md
+```
 
 ## Version History
 
@@ -50,7 +51,7 @@ portfolio/
 - Java中心のデザインへ刷新
 - Java Servlet版作品を追加
 
-### v2.1.1(2026-08-05)
+### v2.1.1 (2026-08-05)
 
 - WHAT'S NEWを追加
 - READMEを追加
