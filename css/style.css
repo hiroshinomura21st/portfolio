@@ -189,6 +189,27 @@ img {
   line-height: 1.8;
 }
 
+.news-more {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.news-more .btn {
+  display: inline-block;
+  min-width: 180px;
+  padding: 12px 24px;
+  border: 1px solid #315d91;
+  border-radius: 4px;
+  color: #315d91;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.news-more .btn:hover {
+  background-color: #315d91;
+  color: #fff;
+}
 
 /*--------------------------------
  Works
@@ -509,6 +530,17 @@ img {
 
   .news-text {
     line-height: 1.7;
+  }
+
+  .news-more {
+    margin-top: 24px;
+  }
+
+  .news-more .btn {
+    width: 100%;
+    max-width: 240px;
+    padding: 10px 20px;
+    font-size: 14px;
   }
 
   /* Works */

@@ -38,6 +38,7 @@ portfolio/
 ├── img/
 ├── js/
 ├── index.html
+├── news.html
 ├── works-1.html
 ├── works-2.html
 ├── works-3.html
@@ -59,6 +60,10 @@ portfolio/
 
 - WHAT'S NEWを追加
 - READMEを追加
+
+### v2.2.0 (2026-08-06)
+
+- WHAT'S NEWの詳細ページを追加
 
 ## 関連リポジトリ
 
